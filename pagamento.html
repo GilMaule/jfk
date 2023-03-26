@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Pagamento</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">JFK</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#grid">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Minha Conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <section class="pagamento">
+            <div class="cadastro">
+                <form action="finalizar.html" method="post"> 
+                    <h1>Informações de Pagamento</h1>
+                    <div class="form-group">
+                        <label for="nome">Nome no Cartão:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome que consta no cartão"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cartao">Número do Cartão de Crédito:</label>
+                        <input type="number" class="form-control" id="cartao" placeholder="Numero do cartão"  required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="validade">Data de validade:</label>
+                            <input type="number" class="form-control" id="validade" name="validade" placeholder="MM/AA"
+                                required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="cvc">Código de segurança (CVC):</label>
+                            <input type="number" class="form-control" id="cvc" name="cvc" placeholder="CVC" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parcelas">Parcelas:</label>
+                        <select id="parcelas" class="form-control" name="parcelas" required>
+                            <option value="">Selecione...</option>
+                            <option value="1">1x com 15% de desconto</option>
+                            <option value="2">2x com 10% de desconto</option>
+                            <option value="3">3x sem juros</option>
+                            <option value="4">4x sem juros</option>
+                            <option value="5">5x sem juros</option>
+                            <option value="6">6x sem juros</option>
+                        </select>
+                        <div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+                        <button type="reset" class="btn btn-primary"> Limpar</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer>
+            <h1>JFK!</h1>
+        </footer>
+
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

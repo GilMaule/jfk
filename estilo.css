@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(188, 247, 247);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+    padding: 20px;
+}
+
+#carouselExampleIndicators img{
+    width: 100%;
+    height: 480px;   
+}
+
+
+.chamada{
+    margin-top: 30px;
+    text-align: center;
+    font-family:sans-serif;
+    color: rgb(14, 14, 15);
+}
+
+.container{
+    padding-bottom: 100px;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.row{ 
+    width: 100%;
+    border-radius: 10px;
+    box-shadow:  0 0 20px;
+    background-color: rgb(33, 36, 36);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.row img{   
+    width: 100%;
+    height: 70%;
+    border-radius: 10px; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0; 
+}
+
+
+.afcontainer .row{
+    margin-left: 0px;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+.afcontainer .row img{
+    width: 360px;
+    height: 250px;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+.textopacote{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 100px;
+}
+
+.botao{
+    padding: 30px;
+    text-align: center;
+}
+
+.botao .btn-primary:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.btn-primary{
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.cadastro .btn-primary:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+} 
+
+.telalogin{
+   position: relative;  
+   margin-left: auto;  
+   margin-right: auto;
+   width: 50%;
+}
+
+.nopass{
+    margin-top: 20px;
+}
+
+.cadastro{
+    position: relative;
+    width: 75%;
+    height: 75vh;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 36, 36);
+    border-radius: 10px;
+    box-shadow: 0 0 20px;
+    padding: 30px;
+    color: aliceblue;
+    top: 0;
+    bottom: 0;
+    transform: translateY(10%);
+}
+
+.pagamento{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.cadastro .final{
+    margin-bottom: 0 ;
+}
+
+
+
+    
+
+
+    
